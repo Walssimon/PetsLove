@@ -12,12 +12,12 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:src="@drawable/dogo" />
+        android:src="@drawable/dogo"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuário"
+        android:text="@string/usuario"
         android:textAllCaps="true"
         android:textColor="#000"
         android:textSize="20sp"
@@ -26,9 +26,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Insira o Usuário"
+        android:hint="@string/insira_o_usuario"
         android:inputType="textEmailAddress"
-        android:maxLength="100" />
+        android:maxLength="100"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:layout_width="match_parent"
@@ -37,22 +38,23 @@
         android:textColor="#000"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:text="Senha" />
+        android:text="@string/senha" />
 
     <EditText
-        android:hint="Insira a Senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/insira_a_senha"
         android:inputType="numberPassword"
         android:maxLength="16"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrar" />
+        android:text="@string/entrar" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sair" />
+        android:text="@string/sair" />
 </LinearLayout>
